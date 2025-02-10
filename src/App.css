@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #ffe6f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Main Container */
+.container {
+  text-align: center;
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 350px;
+  position: relative;
+}
+
+/* Heading */
+h1 {
+  color: #ff4081;
+  font-size: 1.8rem;
+}
+
+.love-text {
+  font-size: 2rem;
+  color: #ff1493;
+}
+
+/* Button Group */
+.button-group {
+  margin-top: 20px;
+  position: relative;
+}
+
+/* Buttons */
+button {
+  padding: 12px 18px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+/* Yes Button */
+.yes-btn {
+  background-color: #28a745;
+  color: white;
+  width: 100px;
+}
+
+.yes-btn:hover {
+  background-color: #218838;
+}
+
+/* No Button (Escapes from Cursor) */
+.no-btn {
+  background-color: #dc3545;
+  color: white;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.no-btn:hover {
+  background-color: #c82333;
+}
+
+/* Falling Hearts */
+.heart {
+  position: fixed;
+  font-size: 2rem;
+  top: -10vh;
+  pointer-events: none;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .love-text {
+    font-size: 1.7rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  .no-btn {
+    width: 90px;
+  }
+
+  .yes-btn {
+    width: 90px;
+  }
+}
